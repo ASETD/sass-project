@@ -1,0 +1,66 @@
+.header {
+    font-size: 100%;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.6)), url(../image/pexels-negative-space-169573.jpg) center no-repeat;
+    background-size: cover;
+
+    .brand {
+        @include centering(15%);
+        display: flex;
+        align-items: center;
+    }
+
+    &-banner {
+        @include centering(50%);
+        text-align: center;
+    }
+
+    .login {
+        margin-right: 0.25rem;
+    }
+
+    .sign-up {
+        margin-left: 0.25rem;
+    }
+
+}
+
+#programming{
+    .programming {
+        font-size: 100%;
+        background:  linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.6)),url(../image/pexels-pixabay-461064.jpg) center no-repeat;
+        background-size: cover;
+        height: 75vh;
+        display: flex;
+        align-items: center;
+        width: 1000px;
+        margin: 0 auto;
+    
+    
+        &-right {
+            width: 40%;
+    
+            video{
+                height:19.75rem;
+                width: 29.1rem;
+            }
+        }
+    
+        &-left{
+            width:60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .description{
+            font-family: $font-nunito;
+            font-size: 1.5rem;
+            color: $color-gray-white;
+            text-align: center;
+        }
+    
+    
+    }
+}
